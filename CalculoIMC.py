@@ -3,11 +3,11 @@
 peso = float(input("Informe o seu peso: "))
 altura = float(input("Informe a sua altura: "))
 
-imc = peso/altura
+imc = peso/altura**2
 
 if imc > 25:
-    print("Acima do peso ideal.")
+    print(f"Acima do peso ideal. {imc}")
 elif imc < 18:
-    print("Abaixo do peso ideal.")
+    print(f"Abaixo do peso ideal. {imc}")
 else:
-    print("Seu peso está OK.")
+    print(f"Seu peso está OK. {imc}")
