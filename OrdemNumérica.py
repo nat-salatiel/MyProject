@@ -1,4 +1,4 @@
-
+#classificando por ordem numérica
 print("Digite 3 números: ")
 x = int(input("Número 1: "))
 y = int(input("Número 2: "))
