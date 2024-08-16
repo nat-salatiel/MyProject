@@ -5,12 +5,16 @@ class cliente:
     def __init__(self, titular, conta, saldo):
         self.titular = titular
         self.__conta = conta
-        self.__saldo = saldo
+        self.saldo = saldo
+
+    def apresentar(self):
+        print("Olá, eu sou a classe-pai!")
+        pass
 
 class cliente_fisico(cliente):
     def apresentar(self):
         print(f"Olá! Eu sou: {self.titular}")
-        print(f"Minha conta é: {self.conta}") #não vai ser reconhecido pois está como privado
+       # print(f"Minha conta é: {self.conta}") #não vai ser reconhecido pois está como privado
         print("E quero saber meu saldo.")
         return
     
